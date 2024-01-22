@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+section .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background: #502905;
+}
+section .left {
+  position: relative;
+  /* float: left; */
+  width: 50%;
+  height: 100%;
+  background: url("images/coffee.jpg") no-repeat;
+
+  background-position: center;
+  background-size: cover;
+}
+.form_box {
+  /* float: right; */
+
+  width: 100%;
+  height: 654px;
+  padding: 20px 40px;
+  /* border: 2px solid red; */
+}
+div h2 {
+  color: white;
+  /* text-align: center; */
+  /* padding-top:100px ; */
+  padding: 60px 30px;
+}
+.form_box input {
+  width: 75%;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  color: white;
+  /* padding: 50px; */
+
+  border: none;
+  outline: none;
+  background: none;
+}
+.form_box input[type="text"],
+.form_box input[type="password"],
+.form_box input[type="email"] {
+  border: none;
+
+  border-bottom: 2px solid #a45b16;
+  outline: none;
+  height: 35px;
+  size: 50px;
+}
+
+/* .form_box input[type="text"]:focus,
+.form_box input[type="password"]:focus,
+.form_box input[type="email"]:focus{
+
+    border-bottom: 2px solid #262626;
+
+} */
+
+.container {
+  /* border: 2px solid red; */
+  padding-left: 20px;
+  width: 80%;
+  margin: 2px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+h4 {
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+.container span {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 12px;
+}
+.btn {
+  width: 110px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 25px;
+  background: #a45b16;
+  color: white;
+  border: none;
+}
+p {
+  color: #a45b16;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  section .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .right {
+    width: 100%;
+    z-index: 1;
+
+    background: url("images/coffee.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
